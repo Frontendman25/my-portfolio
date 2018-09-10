@@ -1,0 +1,33 @@
+$link-hover-clr: #d66e51;
+$text-shadow: 2px 2px 2px rgba(30%, 30%, 30%, .7);
+$txt-light-clr: #fff;
+$bg-clr-header: #FDC75B;
+$bg-clr: #2b3037;
+
+.Roboto-Regular{
+	font-family: 'Roboto-Regular';
+}
+.Roboto-Medium{
+	font-family: 'Roboto-Medium';
+}
+.Roboto-Bold{
+	font-family: 'Roboto-Bold';
+}
+.Roboto-Light{
+	font-family: 'Roboto-Light';
+}
+
+.margin-btm-elements{
+	margin-bottom: 2rem;
+}
+.margin-btm-blocks{
+	margin-bottom: 3.5rem;
+}
+
+.padding-top-blocks{
+	padding-top: 3rem;
+}
+
+.transition-hover{
+	transition: all .4s;
+}

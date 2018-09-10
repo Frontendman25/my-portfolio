@@ -1,0 +1,226 @@
+// sass --watch scss/style.scss:css/style.css
+// ----- EXTENDS ----- //
+@import "variables";
+// ========== EXTENDS END ========== //
+
+// ----- FONTS ----- //
+@import "fonts";
+// ----- FONTS END ----- //
+
+// ----- Jquery ----- //
+
+// ----- Jquery END ----- //
+
+// ----- COMMON STYLES ----- //
+html, body{
+	@extend .Roboto-Regular;
+	font-size: 10px;
+	color: $link-hover-clr;
+    position: relative;
+}
+a:focus{
+	text-decoration: none;
+	color: inherit;
+	text-shadow: none;
+}
+// ========== COMMON STYLES END ========== //
+
+.header{
+	padding: 1rem 0 2.5rem;
+	background: url(../img/bgicons.png);
+	background-color: #fdc75b;
+	background-size: auto;
+	background-position: bottom;
+}
+
+.logo{
+	@extend .margin-btm-elements;
+	font-size: 3rem;
+	@extend .Roboto-Bold;
+}
+
+.nav{
+	&__item{
+		font-size: 0;
+	}
+	&__link{
+		display: inline-block;
+		padding: 5px;
+		border-radius: 6px;
+		font-size: 2rem;
+		color: $txt-light-clr;
+		text-shadow: $text-shadow;
+		@extend .transition-hover;
+		&:hover{
+			text-decoration: none;
+			color: $link-hover-clr;
+			text-shadow: 0 0 0;
+		}
+	}
+}
+
+.contact{
+	@extend .margin-btm-elements;
+	&__wrapImg{
+		margin: 0 auto 1.5rem auto;
+		box-shadow: $text-shadow;
+		width: 200px;
+		height: 200px;
+		text-align: center;
+		background: url('../img/guitarpro.jpg') no-repeat;
+		background-size: cover;
+		background-position: -11px;
+		border: 2px solid $txt-light-clr;
+    border-radius: 50%;
+	}
+//	&__img{
+//		vertical-align: middle;
+//    width: 200px;
+//    height: 200px;
+//	}
+	&__item{
+		margin-bottom: .7rem;
+		@extend .Roboto-Bold;
+		font-size: 1.7rem;
+		letter-spacing: 1px;
+		color: $txt-light-clr;
+		text-shadow: $text-shadow;
+		&:last-child{
+			margin-bottom: 0;
+		}
+		&_phone{
+			display: inline-block;
+			margin-right: 1rem;
+			margin-bottom: .7rem;
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+.waves{
+	margin-top: -21px;
+	height: 22px;
+	background: url(../img/waweb.png) repeat-x;
+	transform: rotate(180deg);
+	&_rotate{
+		margin-top: 0;
+		transform: rotate(0deg);
+	}
+}
+.content{
+	@extend .padding-top-blocks;
+	background: url(../img/bgcont.png);
+}
+
+.aboutMe{
+	margin-bottom: 2rem;
+	line-height: 1.5;
+	font-size: 2rem;
+	color: #fff;
+}
+
+.done{
+	@extend .margin-btm-elements;
+	&__item{
+		@extend .margin-btm-elements;
+		text-align: center;
+		font-size: 0;
+	}
+	&__item_cp{
+		position: relative;
+	}
+	&__item_cp::after{
+		content: 'the best';
+		display: flex;
+		align-items: center;
+		position: absolute;
+		top: -10px;
+		right: 25px;
+		width: 50px;
+		height: 50px;
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		color: #fff;
+		background-color: red;
+		border-radius: 50%;
+		z-index: 10;
+	}
+	&__link{
+		position: relative;
+		display: inline-block;
+		overflow: hidden;
+		&:hover .done__hover{
+			display: block;
+			top: 0;
+		}
+	}
+	&__img, &__hover{
+		border-radius: 5px;
+	}
+	&__hover{
+		position: absolute;
+		top: 100%;
+		width: 100%;
+		max-width: 204px;
+		height: 100%;
+		@extend .Roboto-Light;
+		//background: rgba(50, 50, 50, .5);
+		background: linear-gradient(transparent, rgba(0, 0, 0, .8));
+		@extend .transition-hover;
+	}
+	&__hoverText{
+		display: block;
+		position: absolute;
+		bottom: 0;
+		padding: 3% 0;
+		width: 100%;
+		line-height: 1.2;
+		font-size: 1.4rem;
+		color: rgba(255, 255, 255, .8);
+		background: rgba(0, 0, 0, .7);
+	}
+	&__img{
+		display: inline-block;
+		border: 2px solid rgba(255, 255, 255, .8);
+	}
+}
+
+.headers{
+	padding-top: 1rem;
+	@extend .margin-btm-elements;
+	@extend .Roboto-Bold;
+	font-size: 3rem;
+	color: white;
+	&_dark{
+		color: $bg-clr;
+	}
+}
+
+.resume{
+	@extend .padding-top-blocks;
+	padding-bottom: 2rem;
+	color: $bg-clr;
+}
+
+.text{
+	@extend .margin-btm-elements;
+	&:last-child{
+		margin-bottom: 0;
+	}
+	&__caption{
+		@extend .Roboto-Bold;
+		font-size: 2rem;
+	}
+	&__inner{
+		padding: 1rem 0 1rem 2rem;
+		line-height: 1.6;
+		font-size: 1.6rem;
+	}
+	&__item{
+		@extend .Roboto-Bold;
+	}
+}
+
+@import "media";
