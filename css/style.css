@@ -76,7 +76,7 @@ a:focus {
   text-align: center;
   background: url("../img/guitarpro.jpg") no-repeat;
   background-size: cover;
-  background-position: -11px;
+  background-position: 0;
   border: 2px solid #fff;
   border-radius: 50%; }
 .contact__item {
