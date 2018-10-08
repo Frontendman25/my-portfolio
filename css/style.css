@@ -46,10 +46,10 @@ a:focus {
 
 .header {
   padding: 1rem 0 2.5rem;
-  background: url(../img/bgicons.png);
+  background: url(../img/bgicons.png) no-repeat;
   background-color: #fdc75b;
   background-size: auto;
-  background-position: bottom; }
+  background-position: center; }
 
 .logo {
   font-size: 3rem; }
