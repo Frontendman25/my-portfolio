@@ -73,18 +73,12 @@ a:focus{
 		border: 2px solid $txt-light-clr;
     border-radius: 50%;
 	}
-//	&__img{
-//		vertical-align: middle;
-//    width: 200px;
-//    height: 200px;
-//	}
 	&__item{
 		margin-bottom: .7rem;
 		@extend .Roboto-Bold;
 		font-size: 1.7rem;
 		letter-spacing: 1px;
-		color: $txt-light-clr;
-		text-shadow: $text-shadow;
+		color: #555;
 		&:last-child{
 			margin-bottom: 0;
 		}
