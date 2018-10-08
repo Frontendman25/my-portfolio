@@ -46,7 +46,7 @@ a:focus {
 
 .header {
   padding: 1rem 0 2.5rem;
-  background: url(../img/bgicons.png) no-repeat;
+  background: url(../img/bg.svg);
   background-color: #fdc75b;
   background-size: auto;
   background-position: center; }
