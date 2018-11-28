@@ -46,9 +46,9 @@ a:focus {
 
 .header {
   padding: 1rem 0 2.5rem;
-  background: url(../img/bg.svg);
+  background: url(../img/bg.jpg);
   background-color: #fdc75b;
-  background-size: auto;
+  background-size: cover;
   background-position: center; }
 
 .logo {
