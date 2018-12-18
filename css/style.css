@@ -167,6 +167,11 @@ a:focus {
   color: white; }
   .headers_dark {
     color: #2b3037; }
+  .headers__brand {
+    position: relative;
+    top: 4px;
+    width: 35px;
+    height: 35px; }
 
 .resume {
   padding-bottom: 2rem;

@@ -190,6 +190,12 @@ a:focus{
 	&_dark{
 		color: $bg-clr;
 	}
+	&__brand{
+		position: relative;
+    top: 4px;
+		width: 35px;
+		height: 35px;
+	}
 }
 
 .resume{
