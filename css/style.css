@@ -25,15 +25,19 @@
 @font-face {
   font-family: "Roboto-Regular";
   src: url(../fonts/roboto/Roboto-Regular.ttf); }
+
 @font-face {
   font-family: "Roboto-Medium";
   src: url(../fonts/roboto/Roboto-Medium.ttf); }
+
 @font-face {
   font-family: "Roboto-Bold";
   src: url(../fonts/roboto/Roboto-Bold.ttf); }
+
 @font-face {
   font-family: "Roboto-Light";
   src: url(../fonts/roboto/Roboto-Light.ttf); }
+
 html, body {
   font-size: 10px;
   color: #d66e51;
@@ -56,6 +60,7 @@ a:focus {
 
 .nav__item {
   font-size: 0; }
+
 .nav__link {
   display: inline-block;
   padding: 5px;
@@ -79,6 +84,7 @@ a:focus {
   background-position: 0;
   border: 2px solid #fff;
   border-radius: 50%; }
+
 .contact__item {
   margin-bottom: .7rem;
   font-size: 1.7rem;
@@ -97,10 +103,12 @@ a:focus {
   margin-top: -23px;
   height: 22px;
   background: url(../img/waweb.png) repeat-x;
-  transform: rotate(180deg); }
+  -ms-transform: rotate(180deg);
+      transform: rotate(180deg); }
   .waves_rotate {
     margin-top: 0;
-    transform: rotate(0deg); }
+    -ms-transform: rotate(0deg);
+        transform: rotate(0deg); }
 
 .content {
   background: url(../img/bgcont.png); }
@@ -114,12 +122,16 @@ a:focus {
 .done__item {
   text-align: center;
   font-size: 0; }
+
 .done__item_cp {
   position: relative; }
+
 .done__item_cp::after {
   content: 'the best';
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
   position: absolute;
   top: -10px;
   right: 25px;
@@ -131,6 +143,7 @@ a:focus {
   background-color: red;
   border-radius: 50%;
   z-index: 10; }
+
 .done__link {
   position: relative;
   display: inline-block;
@@ -138,8 +151,10 @@ a:focus {
   .done__link:hover .done__hover {
     display: block;
     top: 0; }
+
 .done__img, .done__hover {
   border-radius: 5px; }
+
 .done__hover {
   position: absolute;
   top: 100%;
@@ -147,6 +162,7 @@ a:focus {
   max-width: 204px;
   height: 100%;
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.8)); }
+
 .done__hoverText {
   display: block;
   position: absolute;
@@ -157,6 +173,7 @@ a:focus {
   font-size: 1.4rem;
   color: rgba(255, 255, 255, 0.8);
   background: rgba(0, 0, 0, 0.7); }
+
 .done__img {
   display: inline-block;
   border: 2px solid rgba(255, 255, 255, 0.8); }
@@ -179,8 +196,10 @@ a:focus {
 
 .text:last-child {
   margin-bottom: 0; }
+
 .text__caption {
   font-size: 2rem; }
+
 .text__inner {
   padding: 1rem 0 1rem 2rem;
   line-height: 1.6;
@@ -202,16 +221,14 @@ a:focus {
 @media only screen and (max-width: 768px) {
   .nav__item {
     text-align: center; } }
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .margin-btm-elements, .logo, .contact, .done, .done__item, .headers, .text {
     margin-bottom: 1.5rem; }
-
   .margin-btm-blocks {
     margin-bottom: 3rem; }
-
   .padding-top-blocks, .content, .resume {
     padding-top: 2rem; } }
-/* Custom, iPhone Retina */
 
-/*# sourceMappingURL=style.css.map */
+/* Custom, iPhone Retina */
